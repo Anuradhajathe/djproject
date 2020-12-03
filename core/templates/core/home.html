@@ -1,0 +1,46 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content%}
+<div class="text-center">
+    <img src="{% static 'core/images/reanu.jpg'%}" alt="anupic" class="img-thumbnail" width="150px" height="100px">
+
+</div>
+<div class="mt-5 text-white mx-5 text-justify">
+    <h1 class="font-weight-bold st-font">Hello, </h1>
+    <div class="px-4" style="line-height: 2rem;">
+        <p style="text-indent: 100px;"> I am <b class="text-warning">Anuradha Jathe</b>
+            Working as Software Engineer at Bitwin Technology, Pune.
+        <div class="container">
+            <strong>Projects Experience</strong>
+            <ul>
+                <li><em>Mart Co-op in Django  (1+ year exp)</em></li>
+                <li><em>Pavilion in Flask (1 year exp) </em></li>
+    
+            </ul>
+        </div>
+
+
+        Having 2+ years of experience as a Web Application Developer using Python and Django.
+        Hands on experience in Web application development using Python, Django, DRF,
+        Django ORM, Flask, SQL Alchemy (ORM).
+        Proficient in designing and implementing RESTful web services.
+        Working knowledge of object-oriented and functional aspects of python programming.
+        Experience in working with database like MySQL
+        Proficient understanding of code versioning tools such as Git.
+        <p>Ability to write reusable, testable and efficient code which others can work on.
+            Hands-on experience in monitoring all logs and managing various logging activities.
+            Dedicated to meet guidelines of requirements and adopt quickly into any kind of environments.</p>
+        Ability to take responsibility and work independently.
+        <p>Completed my B.E. in <b>Information Technology
+            </b>in 2016 from Amravati University.
+
+        </p>
+    </div>
+    <div class="text-center">
+        <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mr-5">Hire me</a>
+
+        <a href="{% url 'contact' %}" class="btn btn-outline-info my-3">Contact</a>
+    </div>
+</div>
+
+{% endblock content%}
